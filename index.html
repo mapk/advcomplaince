@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="stylesheets/normalize.css">
+        <link rel="stylesheet" href="stylesheets/material.min.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="javascripts/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+      <!--[if lt IE 8]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <!-- Uses a header that contracts as the page scrolls down. -->
+			
+			<style>
+			.waterfall-demo-header-nav .mdl-navigation__link:last-of-type  {
+			  padding-right: 0;
+			}
+			</style>
+			<div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+			  <header class="mdl-layout__header mdl-layout__header--waterfall">
+			    <!-- Top row, always visible -->
+			    <div class="mdl-layout__header-row">
+			      <!-- Title -->
+			      <span class="mdl-layout-title">Advanced Compliance</span>
+			      <div class="mdl-layout-spacer"></div>
+			      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+			                  mdl-textfield--floating-label mdl-textfield--align-right">
+			        <label class="mdl-button mdl-js-button mdl-button--icon"
+			               for="waterfall-exp">
+			          <i class="material-icons">search</i>
+			        </label>
+			        <div class="mdl-textfield__expandable-holder">
+			          <input class="mdl-textfield__input" type="text" name="sample"
+			                 id="waterfall-exp" />
+			        </div>
+			      </div>
+			    </div>
+			    <!-- Bottom row, not visible on scroll -->
+			    <div class="mdl-layout__header-row">
+			      <div class="mdl-layout-spacer"></div>
+			      <!-- Navigation -->
+			      <nav class="waterfall-demo-header-nav mdl-navigation">
+			        <a class="mdl-navigation__link" href="">Link</a>
+			        <a class="mdl-navigation__link" href="">Link</a>
+			        <a class="mdl-navigation__link" href="">Link</a>
+			        <a class="mdl-navigation__link" href="">Link</a>
+			      </nav>
+			    </div>
+			  </header>
+			  <div class="mdl-layout__drawer">
+			    <span class="mdl-layout-title">Title</span>
+			    <nav class="mdl-navigation">
+			      <a class="mdl-navigation__link" href="">Link</a>
+			      <a class="mdl-navigation__link" href="">Link</a>
+			      <a class="mdl-navigation__link" href="">Link</a>
+			      <a class="mdl-navigation__link" href="">Link</a>
+			    </nav>
+			  </div>
+			  <main class="mdl-layout__content">
+			    <div class="page-content">
+			    <h2>Hello world!</h2>
+			    </div>
+			  </main>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+      <script src="javascripts/plugins.js"></script>
+      <script src="javascripts/material.js"></script>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+          // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          // e.src='https://www.google-analytics.com/analytics.js';
+          // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          // ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script>
+    </body>
+</html>
