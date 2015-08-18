@@ -212,3 +212,22 @@ ul.unstyled li {
 img {
   max-width: 100%;
 }
+
+/* line 73, ../sass/style.scss */
+#triangle-bottomleft {
+  width: 0;
+  height: 0;
+  border-bottom: 500px solid #d96100;
+  border-right: 500px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  /* line 84, ../sass/style.scss */
+  #triangle-bottomleft {
+    display: none;
+  }
+}

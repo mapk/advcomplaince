@@ -69,3 +69,17 @@ ul.unstyled { margin:0; padding:0;
 }
 
 img { max-width:100%; }
+
+#triangle-bottomleft {
+	width: 0;
+	height: 0;
+	border-bottom: 500px solid $accent-color;
+	border-right: 500px solid transparent;
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index:-1;
+}
+@media (max-width:767px) {
+	#triangle-bottomleft { display:none; }
+}
