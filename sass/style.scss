@@ -5,10 +5,13 @@
 @import "grids";
 @import "palette";
 
-$susy: layout( 12 (4em .7em) after);
+@include border-box-sizing;
+
+$susy: layout( 12 (4em 3em) after);
 
 
-html, body { height:100%; position:relative; background:$primary-color-light; } // For index page only
+html, body { height:100%; position:relative; } // For index page only
+body { border-top:5px solid $accent-color; color:$primary-color; }
 header { height:200px; background:$primary-color; border-top:5px solid $primary-color-dark;
 	display: -webkit-box;
   display: -webkit-flex;
@@ -27,3 +30,39 @@ header { height:200px; background:$primary-color; border-top:5px solid $primary-
 	        align-items: center;
 	h1 { color:$primary-color-light; }
 }
+
+h2 { font-size:2rem; margin:0 0 .8rem 0; color:$accent-color; }
+
+a { color:$accent-color; }
+
+.header { @include container; padding:100px 0; position:relative; text-align:center;
+	.logo { width:200px; height:auto; }
+}
+.content { @include container; margin-top:100px; padding:0 20px;
+	> div:nth-child(1) { @include span(2); margin-bottom:3em; }
+	> div:nth-child(2) { @include span(9 last); @include push(1); 
+		> div { @include span(6); margin-bottom:3em; }
+		> div:nth-child(even) { @include span(6 last); }
+	}
+}
+@media (max-width:1000px) {
+	.content { @include container;
+		> div:nth-child(1) { @include span(3); }
+		> div:nth-child(2) { @include span(9 last); @include push(0); }
+	}
+}
+@media (max-width:767px) {
+	.content { @include container; margin-top:100px;
+		> div:nth-child(1) { width:auto; max-width:200px; }
+		> div:nth-child(2) { @include span(12 last); 
+			> div { @include span(12 last); }
+			> div:nth-child(even) { @include span(12 last); }
+		}
+	}
+}
+
+ul.unstyled { margin:0; padding:0;
+	li { margin:0; padding:0; list-style:none; }
+}
+
+img { max-width:100%; }
