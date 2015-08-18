@@ -15,7 +15,7 @@ html, body {
 /* line 14, ../sass/style.scss */
 body {
   border-top: 5px solid #d96100;
-  color: #9E9E9E;
+  color: #6b6b6b;
 }
 
 /* line 15, ../sass/style.scss */
@@ -170,33 +170,40 @@ a {
     width: 100%;
     float: right;
     margin-right: 0;
+    border-top: 1px solid #9E9E9E;
   }
   /* line 58, ../sass/style.scss */
   .content > div:nth-child(2) > div {
     width: 100%;
     float: right;
     margin-right: 0;
+    border-top: 1px solid #9E9E9E;
+    padding-top: 3em;
   }
   /* line 59, ../sass/style.scss */
+  .content > div:nth-child(2) > div:first-child {
+    border-top: none;
+  }
+  /* line 61, ../sass/style.scss */
   .content > div:nth-child(2) > div:nth-child(even) {
     width: 100%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 64, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 ul.unstyled {
   margin: 0;
   padding: 0;
 }
-/* line 65, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 ul.unstyled li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 img {
   max-width: 100%;
 }

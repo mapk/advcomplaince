@@ -11,7 +11,7 @@ $susy: layout( 12 (4em 3em) after);
 
 
 html, body { height:100%; position:relative; } // For index page only
-body { border-top:5px solid $accent-color; color:$primary-color; }
+body { border-top:5px solid $accent-color; color:darken($primary-color,20%); }
 header { height:200px; background:$primary-color; border-top:5px solid $primary-color-dark;
 	display: -webkit-box;
   display: -webkit-flex;
@@ -54,8 +54,10 @@ a { color:$accent-color; }
 @media (max-width:767px) {
 	.content { @include container; margin-top:100px;
 		> div:nth-child(1) { width:auto; max-width:200px; }
-		> div:nth-child(2) { @include span(12 last); 
-			> div { @include span(12 last); }
+		> div:nth-child(2) { @include span(12 last); border-top:1px solid $primary-color;
+			> div { @include span(12 last); border-top:1px solid $primary-color; padding-top:3em; 
+				&:first-child { border-top:none; }
+			}
 			> div:nth-child(even) { @include span(12 last); }
 		}
 	}
