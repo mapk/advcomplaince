@@ -217,8 +217,8 @@ img {
 #triangle-bottomleft {
   width: 0;
   height: 0;
-  border-bottom: 500px solid #d96100;
-  border-right: 500px solid transparent;
+  border-bottom: 300px solid #d96100;
+  border-right: 300px solid transparent;
   position: absolute;
   bottom: 0;
   left: 0;
